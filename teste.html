@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Álcool ou Gasolina?</h3>
+    <script>
+
+        const tanque = 40;
+        const caminhoComGasolina = 480;
+        const consumoDeGasolina = (caminhoComGasolina / tanque) ;
+        const caminhoComAlcool = 300;
+        const consumoDeAlcool = (caminhoComAlcool / tanque)
+
+
+        document.write("o consumo de gasolina foi" + consumoDeGasolina +"litros por km");
+        
+        pulaLinha();
+        
+        document.write("o consumo de alcool foi" + consumoDeAlcool + "litros por km")
+
+        
+
+        function pulaLinha(){
+            document.write("<br><br>")
+        }
+
+        function mostra(frase){
+            pulaLinha();
+            document.write(frase)
+            pulaLinha();
+        }
+//=============================================================================================================//
+
+        var minhaIdade = 33
+        var idadeLeo = 38
+        var nossaDiferencaDeIdade = (idadeLeo - minhaIdade)
+
+        mostra("minha diferença de idade para o meu irmao é de \n" + nossaDiferencaDeIdade + "\n anos")
+
+// -----------------------------------------------------------------------------------------------------------//
+
+        var anoAtual = 2022;
+        var anoInicial = 1500;
+        var mediaDeGeracoes = (anoAtual - anoInicial) / 28;
+
+        mostra("a media de gerações é \n" + Math.round(mediaDeGeracoes));
+
+    </script>
+</body>
+</html>
+
