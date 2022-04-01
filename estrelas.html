@@ -10,7 +10,6 @@
 
 <body>
     <script>
-
         function pulaLinha() {
 
             document.write("<br>");
@@ -23,31 +22,14 @@
             pulaLinha();
         }
 
-        var numeroPensado = Math.round(Math.random() * 10);
+       for(var linha = 1; linha <=3; linha++){
 
-        var tentativas = 1;
+           mostra("**********")
 
-        while (tentativas <= 3) {
-
-            var chute = parseInt(prompt("Digite seu chute!"));
-
-            if (chute == numeroPensado) {
-
-                mostra("Você ACERTOU, o número pensado era " + numeroPensado);
-                break;
-
-            } else {
-
-                mostra("Você ERROU!");
-            }
-
-            tentativas++;
-        }
-
-        mostra("FIM");
-
-
+       }
+        
     </script>
+
 </body>
 
 </html>
